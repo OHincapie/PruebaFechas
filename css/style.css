@@ -1,0 +1,151 @@
+:root{
+    --negro: black;
+    --blanco: white;
+    --plata: #e3e4e5;
+    --amarillo: #FBD601; 
+    --fondo: #121F3D;
+    --blancotp: rgba(255,255,255,1);
+    
+
+    --fuente: 'Work Sans', sans-serif;;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+ *, *:before, *:after {
+    box-sizing: inherit;
+  }
+   /**Globales*/
+
+   body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: var(--fuente);
+    background-color: #121F3D;
+}
+
+h1, h2, h3, h4{
+    color: var(--blanco);
+    text-align: center;
+    font-family: var(--fuente);
+    
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    h1{
+        font-size: 4.5rem;
+    }
+    
+    h2{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }  
+} 
+
+p{
+    font-size: var(--fuente);
+    color: (var(--blanco));
+}
+
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--negro);
+    margin: 0 auto;
+}
+
+.header h1{
+    margin: 1.4rem auto;
+    font-weight: 400;
+}
+
+.header span{
+    color: var(--amarillo);
+    font-weight: 900;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .5rem;
+    border: none;
+    margin: 2rem auto; 
+    border-radius: .5rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--amarillo);
+    
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    margin: 0 auto;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .contenido{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+
+
+.fecha-domingo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--negro);
+    text-align: center;
+    
+    border-radius: .5rem;
+    padding: 1rem;
+    border:.1rem solid var(--negro) ;
+    background-color: #97FA9C;
+    margin-bottom: 2rem;
+}
